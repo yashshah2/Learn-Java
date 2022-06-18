@@ -1,6 +1,4 @@
 package javabasics;
-
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -9,7 +7,7 @@ public class StudentDatabase {
      * Total of 6 students in the database.
      * @return
      */
-    public List<Student> getAllStudents(){
+    public static List<Student> getAllStudents(){
 
         /**
          * 2nd grade students
@@ -29,14 +27,5 @@ public class StudentDatabase {
 
         List<Student> students = Arrays.asList(student1,student2,student3,student4,student5,student6);
         return students;
-    }
-
-    public static void main(String[] args) {
-        StudentDatabase studentDatabaseObject = new StudentDatabase();
-        List<Student> studentDetailsList = studentDatabaseObject.getAllStudents();
-
-        for(Student studentRecord : studentDetailsList) {
-            System.out.println("Student :: " + studentRecord);
-        }
     }
 }
